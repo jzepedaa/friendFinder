@@ -6,11 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Survey</title>
+    <!-- Link to the jQuery Library -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+    <!-- Including Font Awesome Icons -->
+    <script src="https://use.fontawesome.com/b38c8ed4c7.js"></script>
+
+    <!-- Link to reset stylesheet -->
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+    <!-- Compiled and minified Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
-    <H1>Im here</H1>
+    <header>
+        <nav>
+            <div class="nav-wrapper black accent-2">
+                <i class="fa fa-address-book-o fa-5x" aria-hidden="true" id=logo-icon></i>
+                <a href="./home.html" class="brand-logo" id="logo">Friend Finder</a>
+                <ul class="right hide-on-med-and-down" id="head-nav-links">
+                    <li><a href="./survey.html">Survey</a></li>
+                    <li><a href="/api/friends">API Friends List</a></li>
+                    <li><a href="https://github.com/jzepedaa/friendFinder">GitHub Repo</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 z-depth-5 maincontainer">
+                    <div id="maincontainer-content">
+                        <h1>Survey Questions</h1>
+                        <div class="divider"></div>
+                        <h3>About You</h3>
+                        <div class="input-field col s6">
+                            <h5>Name (Required)</h5>
+                            <i class="material-icons prefix">account_circle</i>
+                            <input type="text" class="validate" placeholder="Your Name Here" id="userName">
+                        </div>
+                        <div class="input-field col s6">
+                            <h5>Link to Photo Image (Required)</h5>
+                            <i class="material-icons prefix">picture_in_picture</i>
+                            <input type="text" class="validate" placeholder="Photo Link Here" id="userPhoto">
+                        </div>
+                        <h3>Questions</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer black accent-2">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Friend Finder App</h5>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="white-text text-lighten-3" href="/api/friends">API Friends List</a></li>
+                        <li><a class="white-text text-lighten-3" href="https://github.com/jzepedaa/friendFinder">GitHub
+                                Repo</a></li>
+                        <li><a class="white-text text-lighten-3" href="https://github.com/jzepedaa">Reference
+                                Work</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <br>
+                <br>
+                © 2017 jzepedaa
+            </div>
+        </div>
+    </footer>
 
 </body>
 
