@@ -7,7 +7,7 @@ module.exports = function (app) {
     app.get('/api/friends', function (req, res) {
         res.json(friends);
     });
-    // The app.post request handles when a user submits a form and thus submits data to the surver
+    // The app.post request handles when a user submits a form and submits data to the surver
     app.post('/api/friends', function (req, res) {
         // loop through all of the possible options
         var bestMatch = {
