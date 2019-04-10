@@ -1,12 +1,9 @@
 body{
-    text-align: center;
     background-image: url("../images/Background1.jpg");
+    background-color: black;
 }
 
-.jumbotron{
-    text-align: center;
-    margin: 100px;
-}
+
 img {
     height: 50%;
     width: 50%;
@@ -18,4 +15,22 @@ img {
 
 footer{
     text-align: center;
+    max-width: auto;
+}
+
+#questions{
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+.divider{
+    color: black;
+    font-weight: bold
+}
+
+.container, .jumbotron{
+    color: white;
+    background-color: black;
+
 }

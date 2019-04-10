@@ -8,42 +8,25 @@
     <!-- Latest compiled and minified CSS & JS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-    <!-- Font Awesome Glyphicons -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="app/public/css/style.css">
     <!-- Chosen -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
-
+    <link rel="stylesheet" href="css/style.css">
 
 
 </head>
-<style>
-    body {
-        background-image: url("../images/Background1.jpg");
-    }
 
-    img {
-        height: 50%;
-        width: 50%;
-    }
-
-    h2 {
-        text-align: center;
-    }
-</style>
 
 
 <body>
 
     <div class="container">
 
-        <h2>Survey Questions</h2>
+        <h2 id="questions">Survey Questions</h2>
         <hr>
-        <div class="divider black"></div>
+        <div class="divider"></div>
         <h3>
             <strong>About You</strong>
         </h3>
@@ -58,7 +41,7 @@
         <h3>
             <strong>Question 1</strong>
         </h3>
-        <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+        <h4>Your mind is always has unexplored ideas and plans.</h4>
         <select class="chosen-select" id="question1">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -71,7 +54,7 @@
         <h3>
             <strong>Question 2</strong>
         </h3>
-        <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+        <h4>You rely more on your experience than your imagination.</h4>
         <select class="chosen-select" id="question2">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -99,7 +82,7 @@
         <h3>
             <strong>Question 4</strong>
         </h3>
-        <h4>You rarely do something just out of sheer curiosity.</h4>
+        <h4>You rarely do something just out of curiosity.</h4>
         <select class="chosen-select" id="question4">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -113,7 +96,7 @@
         <h3>
             <strong>Question 5</strong>
         </h3>
-        <h4>People can rarely upset you.</h4>
+        <h4>You dont really get upset.</h4>
         <select class="chosen-select" id="question5">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -127,7 +110,7 @@
         <h3>
             <strong>Question 6</strong>
         </h3>
-        <h4>It is often difficult for you to relate to other people’s feelings.</h4>
+        <h4>You find it hard to relate to others feelings</h4>
         <select class="chosen-select" id="question6">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -141,7 +124,7 @@
         <h3>
             <strong>Question 7</strong>
         </h3>
-        <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
+        <h4>Truth should be more important than people’s sensitivities.</h4>
         <select class="chosen-select" id="question7">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -154,7 +137,7 @@
         <h3>
             <strong>Question 8</strong>
         </h3>
-        <h4>You rarely get carried away by fantasies and ideas.</h4>
+        <h4>You do not get carried away by fantasies and ideas.</h4>
         <select class="chosen-select" id="question8">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -202,9 +185,9 @@
         <footer class="footer">
             <div class="container">
                 <p>
-                    <a href="/api/friends">API Friends List</a> |
+                    | <a href="/api/friends">API Friends List</a> |
                     <a href="https://github.com/jzepedaa/friendFinder">GitHub Repo</a> |
-                    <a href="./home.html">Back to Home Page</a>
+                    <a href="./home.html">Back to Home Page</a> |
                 </p>
             </div>
             <div class="footer-copyright">
