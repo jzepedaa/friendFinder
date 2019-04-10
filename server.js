@@ -7,12 +7,16 @@ var path = require("path")
 var app = express();
 var PORT = process.env.PORT || 8080;
 
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
 app.use(express.static(path.join(__dirname, './app/public')));
 
 
 // Add the application routes
 require(path.join(__dirname, './app/routing/apiRoutes'))(app);
 require(path.join(__dirname, './app/routing/htmlRoutes'))(app);
+
 
 
 // Start listening on PORT
