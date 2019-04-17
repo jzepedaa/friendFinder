@@ -25,7 +25,7 @@ $("#submit").on("click", function (event) {
 
     function validateForm() {
         var isValid = true;
-        $(".form-control").each(function () {
+        $(".main-form").each(function () {
             if ($(this).val() === "") {
                 isValid = false;
             }
