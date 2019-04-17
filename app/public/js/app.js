@@ -41,7 +41,7 @@ $("#submit").on("click", function (event) {
     }
 
     if (validateForm()) {
-        var userData = {
+        var data = {
             name: $("#name").val(),
             photo: $("#photo").val(),
             scores: [
@@ -58,7 +58,7 @@ $("#submit").on("click", function (event) {
             ]
         };
 
-        $.post("/api/friends", userData, function (data) {
+        $.post("/api/friends", data, function (data) {
 
             $("#match-name").text(data.name);
             $("#match-img").attr("src", data.photo);
